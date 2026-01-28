@@ -6,6 +6,7 @@
     --envelope-color: #9b59b6; /* Purple for envelope */
     --envelope-dark: #71368a;
     --text-color: #4a2c2a;
+    color-scheme: light; /* Force light mode to prevent auto-darkening of parchment */
 }
 
 * {
