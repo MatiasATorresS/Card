@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌹</text></svg>">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <main class="container">
+        <div class="owl-message" role="status">✨ Una lechuza te ha traído una carta... ✨</div>
+        <div class="envelope-wrapper" role="button" tabindex="0" aria-label="Abrir carta">
+            <div class="envelope">
+                <div class="front flap">
+                    <div class="seal"><i>🌹</i></div>
+                </div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <div class="text">
+                        <!-- Página 1 -->
+                        <div class="page active" id="page-1">
+                            <img src="img/principito.png" alt="El Principito" class="letter-image">
+                            <strong>Querida persona especial,</strong>
+                            <p>
+                                "He aquí mi secreto, que no puede ser más simple: solo con el corazón se puede ver bien; lo esencial es invisible para los ojos."
+                            </p>
+                            <p>
+                                (Escribe aquí la primera parte de tu carta...)
+                            </p>
+                        </div>
+
+                        <!-- Página 2 (Ejemplo) -->
+                        <div class="page" id="page-2">
+                            <p>
+                                ...continúa aquí tu mensaje.
+                            </p>
+                            <p>
+                                "Fue el tiempo que pasaste con tu rosa lo que la hizo tan importante."
+                            </p>
+                            <br>
+                            <p class="sign">Con cariño...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Controles de Paginación -->
+                    <div class="pagination">
+                        <button id="prev-btn" class="nav-btn" aria-label="Página anterior" disabled>❮</button>
+                        <span id="page-indicator">1 / 2</span>
+                        <button id="next-btn" class="nav-btn" aria-label="Página siguiente">❯</button>
+                    </div>
+                </div>
+                <div class="hearts">
+                    <div class="heart a1">★</div>
+                    <div class="heart a2">★</div>
+                    <div class="heart a3">★</div>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button id="open">Abrir Carta</button>
+            <button id="reset">Cerrar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
